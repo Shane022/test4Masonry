@@ -25,6 +25,8 @@
 		D55BE0A71BE1CDB70009B431 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D55BE0991BE1CDB70009B431 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		D55BE0A81BE1CDB70009B431 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D55BE09B1BE1CDB70009B431 /* View+MASAdditions.m */; };
 		D55BE0A91BE1CDB70009B431 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D55BE09E1BE1CDB70009B431 /* ViewController+MASAdditions.m */; };
+		D55BE0E71BE1FE9D0009B431 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55BE0E61BE1FE9D0009B431 /* SecondViewController.m */; };
+		D55BE0EA1BE200660009B431 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D55BE0E91BE200660009B431 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		D55BE09C1BE1CDB70009B431 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		D55BE09D1BE1CDB70009B431 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		D55BE09E1BE1CDB70009B431 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D55BE0E51BE1FE9D0009B431 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D55BE0E61BE1FE9D0009B431 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D55BE0E81BE200660009B431 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		D55BE0E91BE200660009B431 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,10 @@
 				D55BE0631BE1CD8F0009B431 /* AppDelegate.m */,
 				D55BE0651BE1CD8F0009B431 /* ViewController.h */,
 				D55BE0661BE1CD8F0009B431 /* ViewController.m */,
+				D55BE0E51BE1FE9D0009B431 /* SecondViewController.h */,
+				D55BE0E61BE1FE9D0009B431 /* SecondViewController.m */,
+				D55BE0E81BE200660009B431 /* CustomTableViewCell.h */,
+				D55BE0E91BE200660009B431 /* CustomTableViewCell.m */,
 				D55BE0681BE1CD8F0009B431 /* Main.storyboard */,
 				D55BE06B1BE1CD8F0009B431 /* Images.xcassets */,
 				D55BE06D1BE1CD8F0009B431 /* LaunchScreen.xib */,
@@ -300,8 +310,10 @@
 				D55BE0641BE1CD8F0009B431 /* AppDelegate.m in Sources */,
 				D55BE0A31BE1CDB70009B431 /* MASLayoutConstraint.m in Sources */,
 				D55BE0611BE1CD8F0009B431 /* main.m in Sources */,
+				D55BE0EA1BE200660009B431 /* CustomTableViewCell.m in Sources */,
 				D55BE0A91BE1CDB70009B431 /* ViewController+MASAdditions.m in Sources */,
 				D55BE0A81BE1CDB70009B431 /* View+MASAdditions.m in Sources */,
+				D55BE0E71BE1FE9D0009B431 /* SecondViewController.m in Sources */,
 				D55BE0A41BE1CDB70009B431 /* MASViewAttribute.m in Sources */,
 				D55BE0A11BE1CDB70009B431 /* MASConstraint.m in Sources */,
 				D55BE0A21BE1CDB70009B431 /* MASConstraintMaker.m in Sources */,
@@ -495,6 +507,7 @@
 				D55BE0801BE1CD8F0009B431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D55BE0811BE1CD8F0009B431 /* Build configuration list for PBXNativeTarget "test4MasonryTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +516,7 @@
 				D55BE0831BE1CD8F0009B431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

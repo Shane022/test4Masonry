@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 #import "Masonry.h"
 
 @interface ViewController ()
@@ -26,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+   
     __weak typeof(self) weakSelf = self;
     
     _textField = [UITextField new];
@@ -45,8 +46,27 @@
     // 注册键盘通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrameNotification:) name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideNotification:) name:UIKeyboardWillHideNotification object:nil];
+    
+    UIScrollView *testScrollView = [UIScrollView new];
+    testScrollView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:testScrollView];
+    
+    UIButton *btnSkip = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnSkip setFrame:CGRectMake(100, 80, 60, 60)];
+    [btnSkip setBackgroundColor:[UIColor orangeColor]];
+    [btnSkip setTitle:@"skip" forState:UIControlStateNormal];
+    [btnSkip addTarget:self action:@selector(skipToNewPage:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnSkip];
+    
 }
 
+#pragma mark - 跳转
+- (void)skipToNewPage:(id)sender {
+    SecondViewController *secondViewController = [[SecondViewController alloc] init];
+    [self presentViewController:secondViewController animated:YES completion:nil];
+}
+
+#pragma mark - 键盘弹出文本框上移
 - (void)keyboardWillChangeFrameNotification:(NSNotification *)notification {
     
     // 获取键盘基本信息（动画时长与键盘高度）
